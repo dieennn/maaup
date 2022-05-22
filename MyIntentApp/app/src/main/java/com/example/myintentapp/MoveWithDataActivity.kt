@@ -18,7 +18,7 @@ class MoveWithDataActivity : AppCompatActivity() {
         val tvDataReceived: TextView = findViewById(R.id.tv_data_received)
 
         val name =  intent.getStringExtra(EXTRA_NAME)
-        val age = intent.getIntExtra(EXTRA_AGE, 0)
+        val age = intent.getDoubleExtra(EXTRA_AGE, 0.0)
 
         val text = "Name: $name, \nYour Age: $age"
         tvDataReceived.text = text
